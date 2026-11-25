@@ -12,7 +12,7 @@ If the role is user print "welcome user" (tip:use if else)
     String role = input.nextLine();
 
 
-    if (role.equals("admin")) {
+    if (role.equalsIgnoreCase("admin")) {
         System.out.println("welcome admin");
     } else if (role.equals("superuser")) {
         System.out.println("welcome superuser");
@@ -45,7 +45,7 @@ Expected Output : The greatest: 87
         System.out.println("The greatest: " + fNumber);
     } else if ((sNumber > fNumber) && (sNumber > tNumber)) {
         System.out.println("The greatest: " + sNumber);
-    } else if ((tNumber > fNumber) && (tNumber > fNumber)) {
+    } else if ((tNumber > fNumber) && (tNumber > sNumber)) {
         System.out.println("The greatest: " + tNumber);
     }
 
@@ -63,7 +63,7 @@ Wednesday
 
     System.out.println("type your number of weekdays: ");
     System.out.print("number: ");
-    int day = input.nextInt();
+    int day =math.rando// input.nextInt();
 
     switch (day) {
         case 1:
