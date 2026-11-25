@@ -53,13 +53,14 @@ Expected Output: Reverse string: xof nworb kciuq ehT
     3.Write a program to find the factorial value of any number entered through the keyboard.
      */
     System.out.print("Enter the number you want to get factorial: ");
-    int factorialNumber = input.nextInt();
-    for (int i = factorialNumber; i >= 1; i--) {
+    int number = input.nextInt();
+    int factorialNumber = 1;
+    for (int i = number; i >= 1; i--) {
 
-         factorialNumber *=i;
+        factorialNumber *= i;
 
     }
-
+    System.out.println("The factorial of " + number + " is: " + factorialNumber);
 
     System.out.println();
     System.out.println("=================================================");
@@ -129,9 +130,9 @@ It should then output a message indicating whether the number is a prime number.
 Then use another for loop to print the days (Days 1 -7) for each week.
 Expected Output:
      */
-    for(int i  =1 ; i<= 4;i++){
+    for (int i = 1; i <= 4; i++) {
         System.out.println("Week " + i);
-        for (int j=1; j<=7;j++){
+        for (int j = 1; j <= 7; j++) {
             System.out.println("Day " + j);
         }
     }
