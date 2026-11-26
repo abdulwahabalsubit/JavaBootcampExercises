@@ -352,8 +352,8 @@ For example, if the input is 12345, the output should be 54321
     int numberReversed = 0;
 
     while (reverseNumber != 0) {
-        int digit = reverseNumber % 10;
-        numberReversed = numberReversed * 10 + digit;
+        int lastDigit = reverseNumber % 10;
+        numberReversed = numberReversed * 10 + lastDigit;
         reverseNumber = reverseNumber / 10;
     }
 
