@@ -172,6 +172,242 @@ together, and then determines whether the sum is equal to the third integer.
     /*
 8 - Java program to convert the temperature in Centigrade to Fahrenheit
      */
+    System.out.println("enter the number you want to convert in Centigrade to Fahrenheit: ");
+    double centigrade = input.nextDouble();
+    double fahrenheit = (centigrade * 9.0 / 5.0) + 32;
 
+    System.out.println("Temperature in Fahrenheit is: " + fahrenheit);
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+9.Write a Java program that takes a string and a number from the user,then prints the
+character in the given index.
+     */
+    System.out.println("enter your Text: ");
+    String indexOfText = input.nextLine();
+    System.out.println("enter the index of character: ");
+    int index = input.nextInt();
+    int lengthOfText = indexOfText.length();
+    if (index > lengthOfText)
+        System.out.println("your enter must by lessThan " + (lengthOfText));
+    System.out.println("the character in index: " + index + " is: " + indexOfText.charAt(index));
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+10. Write a Java program to print the area and perimeter of a rectangle.
+     */
+    System.out.println("enter number to find area and perimeter of a rectangle: ");
+
+    System.out.println("input the width of rectangle: ");
+    double width = input.nextDouble();
+    System.out.println("input the height of rectangle: ");
+    double height = input.nextDouble();
+    System.out.println("Area is  = " + (width * height));
+    System.out.println("Perimeter is  = " + (2 * (width + height)));
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+11. Write a Java program to compare two numbers.
+Input Data:
+Input first integer: 25
+Input second integer: 39
+Expected Output
+25 != 39
+25 < 39
+25 <= 39
+     */
+
+    System.out.println("Input two number to compare between them: ");
+    System.out.print("Input first integer: ");
+    int firstNumber = input.nextInt();
+    System.out.print("Input second integer: ");
+    int secondNumber = input.nextInt();
+    if (firstNumber != secondNumber)
+        System.out.println(firstNumber + " != " + secondNumber);
+    if (firstNumber < secondNumber)
+        System.out.println(firstNumber + " < " + secondNumber);
+    if (firstNumber <= secondNumber)
+        System.out.println(firstNumber + " <= " + secondNumber);
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+12. Write a Java program to convert seconds to hours, minutes and seconds.
+Sample Output:
+Input seconds: 86399
+23:59:59
+     */
+    System.out.print("Input number to convert seconds to hours, minutes and seconds: ");
+    int secondsNum = input.nextInt();
+    int hours = secondsNum / 3600;
+    int remainingSeconds = secondsNum % 3600;
+    int minutes = remainingSeconds / 60;
+    int seconds = remainingSeconds % 60;
+    System.out.print("time --> " + hours + ":" + minutes + ":" + seconds);
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+13. Write a Java program that accepts four integers from the user and prints equal if all four are equal, and not equal otherwise.
+Sample Output:
+Input first number: 25
+Input second number: 37
+Input third number: 45
+Input fourth number: 23
+Numbers are not equal!
+     */
+    System.out.print("Input the first number: ");
+    int firstNum = input.nextInt();
+    System.out.print("Input the second number: ");
+    int secondNum = input.nextInt();
+    System.out.print("Input the third number : ");
+    int thirdNum = input.nextInt();
+    System.out.print("Input the fourth number : ");
+    int fourthNum = input.nextInt();
+    if (firstNum == secondNum && firstNum == thirdNum && firstNum == fourthNum) {
+        System.out.println("Numbers are equal!");
+    } else
+        System.out.println("Numbers are not equal!");
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+14. Write a Java program that reads an integer and check whether it is negative, zero, or positive.
+Test Data
+Input a number: 7
+Expected Output :Number is positive
+     */
+    System.out.print("Input integer to check whether it is negative, zero, or positive ");
+    int negativeOrPositive = input.nextInt();
+
+    if (negativeOrPositive > 0) {
+        System.out.println("Numbers is positive");
+    } else if (negativeOrPositive < 0)
+        System.out.println("Numbers is negative");
+    else if (negativeOrPositive == 0)
+        System.out.println("Numbers is zero");
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+15.Write a program to enter the numbers till the user wants and at the end it
+should display the count of positive, negative and zeros entered (End loop use -1 ,Don’t count -1).
+Test data
+1
+3
+0
+-2
+-4
+-1
+2 positives
+1 zero
+2 negatives
+     */
+
+    int sumPositives = 0;
+    int sumnNgatives = 0;
+    int sumZeros = 0;
+    while (true) {
+        System.out.println("etner number if you want to stop enter number -1: ");
+        int countNumbers = input.nextInt();
+        if (countNumbers == -1)
+            break;
+        if (countNumbers == 0)
+            sumZeros++;
+        else if (countNumbers > 0)
+            sumPositives++;
+        else if (countNumbers < 0 && countNumbers != -1)
+            sumnNgatives++;
+    }
+    System.out.println(sumPositives + " Positive\n" + sumZeros + " Zero\n" + sumnNgatives + " Ngative");
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+16 - Write a program that prompts the user to input an integer and then outputs the
+number with the digits reversed.
+For example, if the input is 12345, the output should be 54321
+     */
+    System.out.println("input an integer you want to reverse: ");
+    int reverseNumber = input.nextInt();
+    int numberReversed = 0;
+
+    while (reverseNumber != 0) {
+        int digit = reverseNumber % 10;
+        numberReversed = numberReversed * 10 + digit;
+        reverseNumber = reverseNumber / 10;
+    }
+
+    System.out.println("number after reversed: " + numberReversed);
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+17 - Write a program to enter the numbers till the user wants and at the end the
+program should display the largest and smallest numbers entered.
+enter the number : 4
+enter the number : 5
+enter the number : -1
+enter the number : 9
+the large number : 9
+the small number : -1
+     */
+    int largeNumber = 0;
+    int smalNumber = 0;
+    System.out.println("input an integer you want to display the largest and smallest numbers entered: ");
+
+    while (true) {
+        System.out.println("etner number if you want to stop enter number 0: ");
+        int currentNumber = input.nextInt();
+        if (currentNumber == 0)
+            break;
+        if (currentNumber > largeNumber)
+            largeNumber = currentNumber;
+        if (currentNumber < largeNumber)
+            smalNumber = currentNumber;
+
+    }
+    System.out.println("the large number :" + largeNumber + "\nthe small number :" + smalNumber);
+
+    System.out.println();
+    System.out.println("======================================");
+    System.out.println();
+
+    /*
+18 - Determine and print the number of times the character ‘a’ appears in the input entered by the user.
+Enter String: Java bootcamp
+Output: Number of a's: 3
+     */
+    int storLetterA = 0;
+    System.out.println("Enter String: ");
+    String text = input.nextLine();
+    int lengthTest = text.length();
+    for (int i = 0; i < lengthTest; i++) {
+        if (text.charAt(i) == 'a')
+            storLetterA++;
+
+    }
+    System.out.println("Number of a's: " + storLetterA);
 
 }
