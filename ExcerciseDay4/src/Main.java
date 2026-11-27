@@ -52,13 +52,16 @@ Expected Output: Reverse string: xof nworb kciuq ehT
     /*
     3.Write a program to find the factorial value of any number entered through the keyboard.
      */
-    System.out.print("Enter the number you want to get factorial: ");
-    int number = input.nextInt();
+    int number;
+    while (true) {
+        System.out.print("Enter the number you want to get factorial: ");
+        number = input.nextInt();
+        if (number >= 0)
+            break;
+    }
     int factorialNumber = 1;
     for (int i = number; i >= 1; i--) {
-
         factorialNumber *= i;
-
     }
     System.out.println("The factorial of " + number + " is: " + factorialNumber);
 
