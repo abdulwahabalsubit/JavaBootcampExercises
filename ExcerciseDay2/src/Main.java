@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
 /*
-* 1. Develop a program that takes the weight (in kilograms) and height (in meters) as input and calculates the BMI, then prints it.
+1. Develop a program that takes the weight (in kilograms) and height (in meters) as input and calculates the BMI, then prints it.
 • Input: Weight (kg) = 70, Height (m) = 1.75
 • Expected Output: BMI = 22.86
 */
@@ -28,7 +28,7 @@ void main() {
 2. Write a program that takes the obtained marks and total marks as input and calculates the percentage, then prints it.
 • Input: Obtained Marks = 85, Total Marks = 100
 • Expected Output: Percentage = 85.0%
- */
+*/
 
     int obtained ;
     int total;
@@ -51,7 +51,7 @@ void main() {
 3. Create a program that takes an amount in one currency and an exchange rate as input, then converts and prints the amount in another currency.
 • Input: Amount in USD = 100, Exchange Rate (USD to EUR) = 0.85
 • Expected Output: Amount in EUR = 85.0
- */
+*/
     double amount ;
     double exchangeRate;
     double convert;
@@ -69,8 +69,7 @@ void main() {
     System.out.println("\n=============================");
     System.out.println();
 /*
-4. Create a program that takes a string as input, calculates its length,
-    and then reverses the string using the StringBuilder class, finally printing both the length and reversed string.
+4. Create a program that takes a string as input, calculates its length, and then reverses the string using the StringBuilder class, finally printing both the length and reversed string.
 • Input: "Hello, World!"
 • Expected Output: Length of the string: 13 And Reversed string: "!dlroW ,olleH"
  */
@@ -86,11 +85,11 @@ void main() {
     System.out.println("\n=============================");
     System.out.println();
 
-    /*
-    5. Develop a program that takes a sentence as input and extracts a substring from it, then prints the extracted substring.
+/*
+5. Develop a program that takes a sentence as input and extracts a substring from it, then prints the extracted substring.
 • Input: Sentence = "The quick brown fox jumps over the lazy dog", Start Index = 10, End Index = 20
 • Expected Output: "brown fox"
-     */
+*/
     String sentence ;
     System.out.println("Enter your sentence to extracts a substring from it");
     sentence = input.nextLine();
@@ -106,8 +105,7 @@ void main() {
     System.out.println();
 
 /*
-6. Write a program that takes a sentence and a keyword as input,
-   then check if the keyword is present in the sentence and prints the result.
+6. Write a program that takes a sentence and a keyword as input, then check if the keyword is present in the sentence and prints the result.
 • Input: Sentence = "The quick brown fox jumps over the lazy dog", Keyword = "jumps"
 • Expected Output: Keyword "jumps" is present in the sentence.
  */
@@ -126,13 +124,11 @@ void main() {
     System.out.println("\n=============================");
     System.out.println();
 
-    /*
-    7. Develop a program that takes a sentence and a word to replace as input,
-    then replace all occurrences of the word with another word and prints the modified sentence.
-• Input: Sentence = "The quick brown fox jumps over the lazy dog",
-Word to Replace = "fox", Replacement Word = "cat"
+/*
+7. Develop a program that takes a sentence and a word to replace as input, then replace all occurrences of the word with another word and prints the modified sentence.
+• Input: Sentence = "The quick brown fox jumps over the lazy dog", Word to Replace = "fox", Replacement Word = "cat"
 • Expected Output: "The quick brown cat jumps over the lazy dog"
-     */
+*/
     String sentenceOfWord;
     String word;
     String wordRelacement;
@@ -149,12 +145,11 @@ Word to Replace = "fox", Replacement Word = "cat"
     System.out.println("\n=============================");
     System.out.println();
 
-    /*
-    8. Write a program that takes two strings as input and check if they are equal,ignoring the case,
-    then prints whether they are equal or not.
+/*
+8. Write a program that takes two strings as input and check if they are equal,ignoring the case, then prints whether they are equal or not.
 • Input:  String1 = "Hello", String 2 = "hello"
 • Expected Output: Strings are equal (ignoring case).
-     */
+*/
 
     String String1;
     String String2;
@@ -171,9 +166,4 @@ Word to Replace = "fox", Replacement Word = "cat"
     System.out.println();
     System.out.println("\n=============================");
     System.out.println();
-
-
-
-
-
 }
